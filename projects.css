@@ -1,0 +1,56 @@
+body {
+    background-color: #f1f1f1;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+  }
+  h1, h2, h3 {
+    color: #007acc;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  p {
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+  }
+  @media (min-width: 1024px) {
+    /* stijl voor grote schermen */
+    h1 {
+      font-size: 48px;
+    }
+    h2 {
+      font-size: 36px;
+    }
+  }
+  @media (max-width: 1023px) and (min-width: 768px) {
+    /* stijl voor middelgrote schermen */
+    h1 {
+      font-size: 36px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+  }
+  @media (max-width: 767px) {
+    /* stijl voor kleine schermen */
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+  }
+  .knop {
+    background-color: #007acc;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .knop:hover {
+    background-color: #005f99;
+  }
