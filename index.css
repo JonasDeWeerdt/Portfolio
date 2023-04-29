@@ -54,3 +54,6 @@ body {
   .knop:hover {
     background-color: #005f99;
   }
+    .knop:visited ,.knop:link,.knop:active,.knop:hover{
+        color: #fff;    
+    }
