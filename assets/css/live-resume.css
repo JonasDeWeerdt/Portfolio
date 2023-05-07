@@ -8018,11 +8018,11 @@ main {
       background-color: #f3f3f3;
       padding: 12px 14px;
       color: #000000;
-      font-size: 8px;
+      font-size: 13px;
       line-height: 1.5;
       min-height: 36px; }
     main .contact-form .form-submit-btn {
-      border-radius: 0;
+      border-radius: 3;
       font-size: 12px;
       font-weight: 700;
       padding: 10px 29px; }
