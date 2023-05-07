@@ -26,7 +26,7 @@ $(window).resize(
 function setHoverBoxPerspective() {
     $('.hover-box').css({
         'perspective': function () {
-            return Math.max( $(this).width(), $(this).height() ) * 2 + 50;
+            return Math.max( $(this).width(), $(this).height() ) * 2 + 75;
         }
     });
 }
