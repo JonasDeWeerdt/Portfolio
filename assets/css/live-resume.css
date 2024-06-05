@@ -11607,12 +11607,9 @@ main .time-line-item::after {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #979797;
-}
-
-main .time-line-item:nth-child(2n)::after {
   background-color: #0067f6;
 }
+
 
 main .time-line-item:not(:first-child)::after {
   top: 5px;

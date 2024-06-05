@@ -75,13 +75,7 @@ main {
                 width: 10px;
                 height: 10px;
                 border-radius: 50%;
-                background-color: #979797;
-            }
-
-            &:nth-child(2n) {
-                &::after {
-                    background-color: $primary;
-                }
+                background-color: $primary;
             }
 
             &:not(:first-child) {
