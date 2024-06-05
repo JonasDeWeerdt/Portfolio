@@ -58,3 +58,26 @@ $('.hover-box').hover(
 
     }
 );
+
+document.getElementById('share-button').addEventListener('click', function() {
+    // Get the current URL
+    const url = window.location.href;
+    
+    // Create a temporary input element to hold the URL
+    const tempInput = document.createElement('input');
+    tempInput.value = url;
+    document.body.appendChild(tempInput);
+
+    // Select the input value
+    tempInput.select();
+    tempInput.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the text to the clipboard
+    document.execCommand('copy');
+
+    // Remove the temporary input element
+    document.body.removeChild(tempInput);
+
+    // Optionally, you can alert the user that the URL has been copied
+    alert('URL copied to clipboard!');
+});
