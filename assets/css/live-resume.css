@@ -11939,6 +11939,20 @@ main .portfolio-wrapper .portfolio-item-details {
   color: #ffffff;
 }
 
+.portfolio-item-details.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative; /* Ensure the button can be positioned correctly within the figcaption */
+}
+
+.portfolio-item-details.overlay button {
+  z-index: 1; /* Ensure the button is above other elements */
+  pointer-events: auto; /* Ensure the button can receive pointer events */
+}
+
 main .portfolio-wrapper .portfolio-item-title {
   font-size: 18px;
   font-weight: 700;
@@ -11948,60 +11962,18 @@ main .portfolio-wrapper .portfolio-item-title {
 
 main .portfolio-wrapper .portfolio-item-description {
 
-  line-height: 1;
-
+  line-height: 1.25;
   margin-bottom: 0;
 }
 
-@media (max-width: 2500px) {
-  main .portfolio-wrapper .portfolio-item-description {
-    font-size: 15px;
-  }
 
-  main .portfolio-wrapper .portfolio-item-description strong {
-    font-size: 18px;
-  }
+main .portfolio-wrapper .portfolio-item-description {
+  font-size: 15px;
+}
+main .portfolio-wrapper .portfolio-item-description strong {
+  font-size: 18px;
 }
 
-@media (max-width: 1500px) {
-  main .portfolio-wrapper .portfolio-item-description {
-    font-size: 13px;
-  }
-
-  main .portfolio-wrapper .portfolio-item-description strong {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 991px) {
-  main .portfolio-wrapper .portfolio-item-description {
-    font-size: 12px;
-  }
-
-  main .portfolio-wrapper .portfolio-item-description strong {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 767px) {
-  main .portfolio-wrapper .portfolio-item-description {
-    font-size: 11px;
-  }
-
-  main .portfolio-wrapper .portfolio-item-description strong {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 575px) {
-  main .portfolio-wrapper .portfolio-item-description {
-    font-size: 13px;
-  }
-
-  main .portfolio-wrapper .portfolio-item-description strong {
-    font-size: 16px;
-  }
-}
 
 main .blog-section {
   margin-bottom: 51px;

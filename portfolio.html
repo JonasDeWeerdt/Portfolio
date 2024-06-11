@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="assets/css/live-resume.css">
-    <link rel="icon" href="/Portfolio/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         <nav class="collapsible-nav active" id="collapsible-nav">
             <a href="index.html" class="nav-link">HOME</a>
             <a href="stage.html" class="nav-link">STAGE</a>
-            <a href="portfolio.html" class="nav-link active">PROJECTEN</a>
+            <a href="portfolio.html" class="nav-link active">PORTFOLIO</a>
             <a href="contact.html" class="nav-link">CONTACT</a>
         </nav>
         <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
@@ -42,7 +42,7 @@
             </nav>
             <div class="widget">
                 <div class="widget-content">
-                    <a href="/Portfolio/assets/documents/CV_jonas_de_weerdt.pdf" download><button
+                    <a href="assets/documents/CV_jonas_de_weerdt.pdf" download><button
                             class="btn btn-download-cv btn-primary rounded-pill"> <img src="assets/images/download.svg"
                                 alt="download" class="btn-img">DOWNLOAD CV
                         </button></a>
@@ -74,122 +74,268 @@
                 <h2 class="section-title">PORTFOLIO</h2>
 
                 <div class="portfolio-wrapper">
+                    <figure class="portfolio-item hover-box col-12">
+                        <img src="assets/images/Project4.0.jpeg" alt="project" class="portfolio-item-img">
+                        <img src="assets/images/sohaibOnThFloor.png" alt="project" class="portfolio-item-img">
+                        <figcaption class="portfolio-item-details overlay">
+                            <h3 class="portfolio-item-title">Project 4.0</h3>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#projectModal">
+                                Meer informatie
+                            </button>
+                        </figcaption>
+                    </figure>
+                    <div class="modal fade" id="projectModal" tabindex="-1" role="dialog"
+                        aria-labelledby="projectModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="projectModalLabel">Project 4.0</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="portfolio-item-description">
+                                        <strong>Context en achtergrond:</strong> Het project werd ons gegeven door
+                                        Mediaan en de bedoeling was om oudere mensen langer thuis te kunnen laten wonen
+                                        door AI powered monitoring systems.<br>
+                                        <strong>Wat heb ik concreet gerealiseerd:</strong> Een cloud infrastructuur die
+                                        volledig automatisch werd opgezet via Azure pipelines. Alsook het opslagen van
+                                        de clips van de mensen die de AI als vallen zag.<br>
+                                        <strong>Mijn aandeel in groepswerk:</strong> Ik heb samen met Matthias Theys de
+                                        pipeline en infrastructure as code geschreven. Er was geen duidelijke verdeling
+                                        we hielpen elkaar gewoon wanneer we een probleem hadden.<br>
+                                        <strong>Wat ik heb geleerd:</strong> Voor de project hadden we nog geen contact
+                                        gehad met Azure pipelines dus dit heb ik volledig moeten leren maar ook hoe ik
+                                        zo goedkoop mogelijk een API backend op Azure kon hosten.<br>
+                                    </p>
+                                    <br>
+                                    <h5>Extra informatie over het volledige project</h5>
+                                    <a href="assets/documents/Final Report Team C1 Caring Minds.pdf" target="_blank"
+                                        rel="noopener noreferrer">Realisatie
+                                        document</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                     <figure class="portfolio-item hover-box">
                         <img src="assets/images/Project_week.jpg" alt="project" class="portfolio-item-img">
-                        <figcaption class="portfolio-item-details overlay">
+                        <figcaption class="portfolio-item-details overlay content-align-center">
                             <h3 class="portfolio-item-title">Web applicatie quiz</h3>
-                            <p class="portfolio-item-description"><strong>Context en
-                                    achtergrond:</strong> Dit project
-                                was zeer interessant door de vele nieuwe dingen die we
-                                erdoor geleerd hebben, zoals het opmaken van user stories en andere voorbereidende
-                                werkzaamheden. We hebben
-                                een web applicatie gemaakt voor een fictief bedrijf waarop
-                                een quiz getoond, gemaakt en aangepast kan worden. Daarnaast was er ook een antwoord
-                                doos waarop de
-                                deelnemers hun antwoord konden doorsturen.<br>
-                                <strong>Wat heb ik concreet gerealiseerd:</strong> Een API om
-                                users mee aan te maken en
-                                de volledige quiz te
-                                controleren.<br>
-                                <strong>Mijn aandeel in groepswerk:</strong> Ik heb dit project
-                                samen met 3 andere
-                                studenten gedaan. Ik heb
-                                heel de API gemaakt en
-                                geholpen met de frontend.<br>
-                                <strong>Wat ik heb geleerd:</strong> Tijdens dit project heb ik
-                                geleerd hoe ik efficiënt
-                                kan samenwerken in
-                                een groep en hoe ik specifiek kan werken aan een bepaald onderdeel van een project. Ook
-                                heb ik geleerd hoe
-                                ik mijn vaardigheden op het gebied van programmeren kan toepassen in een praktische
-                                setting. <br>
-
-                            </p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#WebModal">
+                                Meer informatie
+                            </button>
                         </figcaption>
                     </figure>
+                    <div class="modal fade" id="WebModal" tabindex="-1" role="dialog" aria-labelledby="WebModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="WebModalLabel">Web applicatie quiz</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="portfolio-item-description"><strong>Context en
+                                            achtergrond:</strong> Dit project
+                                        was zeer interessant door de vele nieuwe dingen die we
+                                        erdoor geleerd hebben, zoals het opmaken van user stories en andere
+                                        voorbereidende
+                                        werkzaamheden. We hebben
+                                        een web applicatie gemaakt voor een fictief bedrijf waarop
+                                        een quiz getoond, gemaakt en aangepast kan worden. Daarnaast was er ook een
+                                        antwoord
+                                        doos waarop de
+                                        deelnemers hun antwoord konden doorsturen.<br>
+                                        <strong>Wat heb ik concreet gerealiseerd:</strong> Een API om
+                                        users mee aan te maken en
+                                        de volledige quiz te
+                                        controleren.<br>
+                                        <strong>Mijn aandeel in groepswerk:</strong> Ik heb dit project
+                                        samen met 3 andere
+                                        studenten gedaan. Ik heb
+                                        heel de API gemaakt en
+                                        geholpen met de frontend.<br>
+                                        <strong>Wat ik heb geleerd:</strong> Tijdens dit project heb ik
+                                        geleerd hoe ik efficiënt
+                                        kan samenwerken in
+                                        een groep en hoe ik specifiek kan werken aan een bepaald onderdeel van een
+                                        project. Ook
+                                        heb ik geleerd hoe
+                                        ik mijn vaardigheden op het gebied van programmeren kan toepassen in een
+                                        praktische
+                                        setting. <br>
+
+                                    </p>
+                                    <br>
+                                    <h5>Link naar het project</h5>
+                                    <a
+                                        href="https://github.com/sooivervloessem/quiz">https://github.com/sooivervloessem/quiz</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <figure class="portfolio-item hover-box">
                         <img src="assets/images/API-eindproject.png" alt="project" class="portfolio-item-img">
-                        <figcaption class="portfolio-item-details overlay">
-                            <h5 class="portfolio-item-title">API project</h5>
-                            <p class="portfolio-item-description"><strong>Context en
-                                    achtergrond:</strong> Voor dit
-                                project was het mij idee om een API
-                                te maken voor een fictieve dierentuin waar alle data van de dierentuin kan opgeslagen
-                                worden en
-                                dynamisch beschikbaar te is. Daarnaast moesten we ook een andere API consumeren om bij
-                                elke nieuwe kat
-                                die werd toegevoegd, een leuk feitje over een kat toe te voegen.<br>
-                                <strong>Wat heb ik concreet gerealiseerd:</strong> Ik heb de
-                                API ontworpen en ontwikkeld
-                                en heb
-                                daarnaast ook de integratie met de andere API geïmplementeerd.<br>
-                                <strong>Wat ik heb geleerd:</strong> Door dit project heb ik
-                                mijn
-                                programmeervaardigheden kunnen
-                                verbeteren en heb ik geleerd hoe ik een API kan ontwerpen en implementeren. Daarnaast
-                                heb ik ook geleerd
-                                hoe ik verschillende APIs kan combineren en integreren.
-                            </p>
+                        <figcaption class="portfolio-item-details overlay content-align-center">
+                            <h3 class="portfolio-item-title">API project</h3>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#APIModal">
+                                Meer informatie
+                            </button>
                         </figcaption>
                     </figure>
+                    <div class="modal fade" id="APIModal" tabindex="-1" role="dialog" aria-labelledby="APIModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="APIModalLabel">API project</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="portfolio-item-description"><strong>Context en
+                                            achtergrond:</strong> Voor dit
+                                        project was mijn idee om een API
+                                        te maken voor een fictieve dierentuin waar alle data van de dierentuin kan
+                                        opgeslagen
+                                        worden en
+                                        dynamisch beschikbaar te is. Daarnaast moesten we ook een andere API consumeren
+                                        om bij
+                                        elke nieuwe kat
+                                        die werd toegevoegd, een leuk feitje over een kat toe te voegen.<br>
+                                        <strong>Wat heb ik concreet gerealiseerd:</strong> Ik heb de
+                                        API ontworpen en ontwikkeld
+                                        en heb
+                                        daarnaast ook de integratie met de andere API geïmplementeerd.<br>
+                                        <strong>Wat ik heb geleerd:</strong> Door dit project heb ik
+                                        mijn
+                                        programmeervaardigheden kunnen
+                                        verbeteren en heb ik geleerd hoe ik een API kan ontwerpen en implementeren.
+                                        Daarnaast
+                                        heb ik ook geleerd
+                                        hoe ik verschillende APIs kan combineren en integreren.
+                                    </p>
+                                    <br>
+                                    <h5>Link naar het project</h5>
+                                    <a
+                                        href="https://github.com/JonasDeWeerdt/API-eindproject">https://github.com/JonasDeWeerdt/API-eindproject</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <figure class="portfolio-item hover-box">
                         <img src="assets/images/shark from iot.png" alt="project" class="portfolio-item-img">
-                        <figcaption class="portfolio-item-details overlay">
-                            <h5 class="portfolio-item-title">Aquarium project</h5>
-                            <p class="portfolio-item-description">
-                                <strong>Context en achtergrond:</strong> Voor dit project was
-                                mijn doel om een geautomatiseerd aquarium
-                                te creëren dat op een efficiënte manier zijn verlichting regelt, dagelijks voedsel
-                                verstrekt en waarbij
-                                het waterpeil automatisch wordt aangepast door middel van een pomp. Dit zou zorgen voor
-                                een optimale
-                                omgeving voor de vissen.<br>
-                                <strong>Wat heb ik concreet gerealiseerd:</strong> Ik heb het
-                                aquarium voorzien van sensoren om de
-                                diepte van het water te kunnen meten. Op basis van deze metingen kan de pomp worden
-                                ingeschakeld om
-                                extra water toe te voegen. Daarnaast heb ik ook een tijdschakelaar geïntegreerd voor de
-                                verlichting en
-                                voeding. Dit betekent dat de verlichting en voeding op vaste tijden plaatsvinden,
-                                waardoor de vissen een
-                                consistent ritme hebben.<br>
-                                <strong>Wat ik heb geleerd:</strong> Door dit project heb ik
-                                geleerd hoe ik verschillende sensoren en
-                                actuatoren kan combineren om een geautomatiseerd systeem te creëren. Daarnaast heb ik
-                                ook geleerd hoe ik
-                                de metingen van de sensoren kan gebruiken om beslissingen te nemen en acties uit te
-                                voeren.
-
-
-                            </p>
+                        <figcaption class="portfolio-item-details overlay content-align-center">
+                            <h3 class="portfolio-item-title">Aquarium project</h3>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#AquariumModal">
+                                Meer informatie
+                            </button>
                         </figcaption>
                     </figure>
+                    <div class="modal fade" id="AquariumModal" tabindex="-1" role="dialog"
+                        aria-labelledby="AquariumModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="AquariumModalLabel">Aquarium project</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="portfolio-item-description">
+                                        <strong>Context en achtergrond:</strong> Voor dit project was
+                                        mijn doel om een geautomatiseerd aquarium
+                                        te creëren dat op een efficiënte manier zijn verlichting regelt, dagelijks
+                                        voedsel
+                                        verstrekt en waarbij
+                                        het waterpeil automatisch wordt aangepast door middel van een pomp. Dit zou
+                                        zorgen voor
+                                        een optimale
+                                        omgeving voor de vissen.<br>
+                                        <strong>Wat heb ik concreet gerealiseerd:</strong> Ik heb het
+                                        aquarium voorzien van sensoren om de
+                                        diepte van het water te kunnen meten. Op basis van deze metingen kan de pomp
+                                        worden
+                                        ingeschakeld om
+                                        extra water toe te voegen. Daarnaast heb ik ook een tijdschakelaar geïntegreerd
+                                        voor de
+                                        verlichting en
+                                        voeding. Dit betekent dat de verlichting en voeding op vaste tijden
+                                        plaatsvinden,
+                                        waardoor de vissen een
+                                        consistent ritme hebben.<br>
+                                        <strong>Wat ik heb geleerd:</strong> Door dit project heb ik
+                                        geleerd hoe ik verschillende sensoren en
+                                        actuatoren kan combineren om een geautomatiseerd systeem te creëren. Daarnaast
+                                        heb ik
+                                        ook geleerd hoe ik
+                                        de metingen van de sensoren kan gebruiken om beslissingen te nemen en acties uit
+                                        te
+                                        voeren.
+
+
+                                    </p>
+                                    <br>
+                                    <h5>Link naar het project</h5>
+                                    <a
+                                        href="https://github.com/JonasDeWeerdt/Automatisch-Aquarium">https://github.com/JonasDeWeerdt/Automatisch-Aquarium</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <figure class="portfolio-item hover-box">
                         <img src="assets/images/hosted laravel project.png" alt="project" class="portfolio-item-img">
-                        <figcaption class="portfolio-item-details overlay">
-                            <h5 class="portfolio-item-title">Project hosting</h5>
-                            <p class="portfolio-item-description">
-                                <strong>Context en achtergrond:</strong> Wij moeten voor het vak een project hosting een
-                                hosting platform opzetten dat laravel projecten kan hosten en waarop ze kunnen inloggen
-                                met hun eigen gegevens.<br>
-                                <strong>Wat heb ik concreet gerealiseerd:</strong> Tot nu toe hebben wij in het project
-                                een laravel project kunnen hosten op een ubuntu desktop omgeving dit heb ik zelf
-                                gerealiseerd en same met reno heb ik ook een deel van de API gedaan.<br>
-                                <strong>Wat ik heb geleerd:</strong> Ik heb geleerd hoe ik een laravel project kan
-                                hosten op een ubuntu desktop omgeving.
-                            </p>
-
+                        <figcaption class="portfolio-item-details overlay content-align-center">
+                            <h3 class="portfolio-item-title">Project hosting</h3>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#hostingModal">
+                                Meer informatie
+                            </button>
                         </figcaption>
                     </figure>
-
-                    <ul>
-                        <h5>links naar de projecten</h5>
-                        <li><a href="https://github.com/sooivervloessem/quiz">Web applicatie quiz</a></li>
-                        <li><a href="https://github.com/JonasDeWeerdt/API-eindproject">API project</a></li>
-                        <li><a href="https://github.com/RGoeyvaerts/project-hosting">Project hosting</a></li>
-                        <li><a href="https://github.com/JonasDeWeerdt/Automatisch-Aquarium">Aquarium project</a></li>
-                    </ul>
+                    <div class="modal fade" id="hostingModal" tabindex="-1" role="dialog"
+                        aria-labelledby="hostingModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="hostingModalLabel">Project hosting</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="portfolio-item-description">
+                                        <strong>Context en achtergrond:</strong> Wij moeten voor het vak een project
+                                        hosting een
+                                        hosting platform opzetten dat laravel projecten kan hosten en waarop ze kunnen
+                                        inloggen
+                                        met hun eigen gegevens.<br>
+                                        <strong>Wat heb ik concreet gerealiseerd:</strong> Tot nu toe hebben wij in het
+                                        project
+                                        een laravel project kunnen hosten op een ubuntu desktop omgeving dit heb ik zelf
+                                        gerealiseerd en same met reno heb ik ook een deel van de API gedaan.<br>
+                                        <strong>Wat ik heb geleerd:</strong> Ik heb geleerd hoe ik een laravel project
+                                        kan
+                                        hosten op een ubuntu desktop omgeving.
+                                    </p>
+                                    <br>
+                                    <h5>Link naar het project</h5>
+                                    <a
+                                        href="https://github.com/RGoeyvaerts/project-hosting">https://github.com/RGoeyvaerts/project-hosting</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </section>
